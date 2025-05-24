@@ -1,6 +1,7 @@
 name: Run Behave Tests
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
