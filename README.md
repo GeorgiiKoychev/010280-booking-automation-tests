@@ -20,8 +20,6 @@ Tools & Technologies
   GitHub & GitHub Actions – version control and CI/CD
 
 Project Structure:
-
-booking_automation/
     
     booking_automation/
       ├── features/
