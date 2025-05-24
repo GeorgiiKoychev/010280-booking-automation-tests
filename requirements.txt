@@ -1,0 +1,4 @@
+behave
+appium-python-client>=5.1.0
+selenium>=4.0.0
+appium --base-path=/wd/hub --port 4723
