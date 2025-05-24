@@ -22,12 +22,26 @@ Tools & Technologies
 Project Structure:
 
 booking_automation/
-    features/
-    steps/
-    screenshots/
-    logs/
-    .github/
-    README.md
+    
+    booking_automation/
+      ├── features/
+      │   ├── 01_search_hotel.feature
+      │   ├── 02_filter_by_rating.feature
+      │   ├── 03_sort_by_distance.feature
+      │   ├── 04_search_flight.feature
+      │   └── 05_search_car_rental.feature
+      ├── steps/
+      │   ├── search_steps.py
+      │   ├── filter_steps.py
+      │   ├── sort_steps.py
+      │   ├── flight_steps.py
+      │   └── cars_steps.py
+      ├── screenshots/
+      ├── logs/
+      ├── .github/
+      │   └── workflows/
+      │       └── python-app.yml
+      └── README.md
 
 Running the Tests:
   1.Start Appium server:
