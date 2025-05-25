@@ -54,3 +54,4 @@ Running the Tests:
 
 This project uses GitHub Actions to trigger tests automatically on push.
 On failure, screenshots are saved to the /screenshots folder. 
+ 
