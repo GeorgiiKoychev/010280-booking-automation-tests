@@ -1,10 +1,8 @@
-name: Run Behave Tests
+name: Run Behave Tests with Allure
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
 
 jobs:
@@ -25,5 +23,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Behave dry-run (syntax validation only)
-        run: behave --dry-run
+      - name: Run Behave tests with Allure
+        run: behave -f allure_behave.formatter:AllureFormatter -o allure-results
+
+      - name: Upload Allure results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
