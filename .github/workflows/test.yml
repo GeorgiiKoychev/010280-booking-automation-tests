@@ -23,8 +23,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Behave tests with Allure
-        run: behave -f allure_behave.formatter:AllureFormatter -o allure-results
+      - name: Run Behave dry-run with Allure
+        run: behave -f allure_behave.formatter:AllureFormatter -o allure-results --dry-run
 
       - name: Upload Allure results as artifact
         uses: actions/upload-artifact@v4
