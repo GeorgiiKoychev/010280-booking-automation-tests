@@ -23,3 +23,6 @@ venv/
 *.tmp
 *.mp4
 *.trace
+
+allure-results/
+allure-report/
